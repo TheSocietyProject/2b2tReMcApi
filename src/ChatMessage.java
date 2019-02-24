@@ -27,9 +27,10 @@ public class ChatMessage {
      * for spam msg pointing
      * @param nevMsg
      */
-    public void setLink(String nevMsg){
+    public ChatMessage setLink(String nevMsg){
         this.isLink = true;
         this.msg = nevMsg;
+        return this;
     }
 
     public boolean isConnecting(){
